@@ -1,0 +1,17 @@
+.app {
+    background-size: cover;
+    background-position: center;
+}
+
+.app.img1 {
+    background-image: url(/public/img/img1.jpg);
+}
+.app.img2 {
+    background-image: url(/public/img/img2.jpg);
+}
+.app.img3 {
+    background-image: url(/public/img/img3.jpg);
+}
+.app.img4 {
+    background-image: url(/public/img/img4.jpg);
+}
