@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import infoQuotes from "./db/infoQuotes.json";
 import { getRandomElement } from "./utils/random";
@@ -13,14 +13,11 @@ function App() {
   const handleChangeQuote = () => {
     setQuote(getRandomElement(infoQuotes));
     setCurrentImg(getRandomElement(backgrounds));
-  }
+  };
 
   return (
     <main className={`app ${currentImg}`}>
-      <QuoteCard
-        handleChangeQuote={handleChangeQuote}
-        quote={quote}
-      />
+      <QuoteCard handleChangeQuote={handleChangeQuote} quote={quote} />
     </main>
   );
 }
